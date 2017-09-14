@@ -53,7 +53,6 @@ func countIpSort (accLog []string) []keyValue {
 func main() {
 	filename := os.Args[1]
 	maxcount := 50
-	//filename := "/home/ramieres/logs/access.log"
 	accLog, err := readLines(filename)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Невозможно прочитать файл: %v: %v\n", filename, err)
