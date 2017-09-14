@@ -1,5 +1,4 @@
 //go 1.8
-
 package main
 
 import (
@@ -36,7 +35,6 @@ func countIpSort (accLog []string) []keyValue {
 		if line != "" && (strings.Count(line, " ") > 1) {
 			splitLine := strings.Split(line, " ")
 			maxIpUsage[splitLine[1]]++
-			//fmt.Println(splitLine[1])
 		}
 	}
 	var ipSlice []keyValue
